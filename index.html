@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="The personal portfolio of Kotaru Venakata Lokesh, an Electronics and Communication Engineering student."
+    >
+    <meta name="theme-color" content="#0c0c0e">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kotaru Venakata Lokesh | Developer Portfolio">
+    <meta
+      property="og:description"
+      content="The personal portfolio of Kotaru Venakata Lokesh, an Electronics and Communication Engineering student."
+    >
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kotaru Venakata Lokesh | Developer Portfolio">
+    <meta
+      name="twitter:description"
+      content="The personal portfolio of Kotaru Venakata Lokesh, an Electronics and Communication Engineering student."
+    >
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0c0e'/%3E%3Ctext x='32' y='46' font-size='42' text-anchor='middle' fill='%23c9a96e' font-family='Georgia,serif'%3EK%3C/text%3E%3C/svg%3E"
+    >
+    <title>Kotaru Venakata Lokesh | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <noscript><p class="noscript-message">JavaScript is required for the site navigation and footer. The page content remains available below.</p></noscript>
+    <canvas class="ambient-canvas" aria-hidden="true"></canvas>
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="glow glow--blue" aria-hidden="true"></div>
+    <div class="glow glow--purple" aria-hidden="true"></div>
+
+    <div id="site-header"></div>
+
+    <main id="main">
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="availability-badge"><span class="availability-badge__dot"></span> Available for freelance</p>
+          <h1 id="hero-title">KOTARU<br>VENAKATA <span>LOKESH</span></h1>
+          <p class="hero__value">I build full-stack web applications.</p>
+          <p class="hero__intro">ECE graduate (2026), building practical web products for real-world needs.</p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="projects.html#projects">
+              View Projects <span aria-hidden="true">↗</span>
+            </a>
+            <!-- Add resume.pdf to the site root for this download link. -->
+            <a class="button button--secondary" href="resume.pdf" download>
+              Download Resume <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+          <div class="hero__scroll" aria-hidden="true">
+            <span class="scroll-line"></span>
+            <span>SCROLL TO EXPLORE</span>
+          </div>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="orbit orbit--outer"></div>
+          <div class="orbit orbit--wide"></div>
+          <div class="orbit orbit--middle"></div>
+          <div class="orbit orbit--inner"></div>
+          <div class="core">
+            <span class="core__mark">KVL</span>
+            <span class="core__caption">WEB<br>APPLICATIONS</span>
+          </div>
+          <span class="orbit-label orbit-label--top">DIGITAL CRAFT</span>
+          <span class="orbit-label orbit-label--right">BUILD / SHIP</span>
+          <span class="orbit-label orbit-label--bottom">ECE · 2026</span>
+          <span class="orbit-label orbit-label--left">LOKESH</span>
+          <span class="spark spark--one"></span>
+          <span class="spark spark--two"></span>
+          <span class="spark spark--three"></span>
+        </div>
+
+        <div class="hero__index" aria-hidden="true">01 <span>/</span> 04</div>
+      </section>
+
+      <section class="about section-shell content-section" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 — ABOUT</p>
+          <h2 id="about-title">A little about <span>me.</span></h2>
+        </div>
+        <div class="about__grid">
+          <article class="info-card education-card">
+            <div class="card-icon" aria-hidden="true">⌁</div>
+            <p class="card-label">EDUCATION</p>
+            <h3>B.Tech</h3>
+            <p>Electronics and Communication Engineering</p>
+            <div class="card-divider"></div>
+            <p class="card-meta">NRI Institute of Technology</p>
+            <div class="education-card__footer">
+              <span>2022–2026</span>
+              <span>CGPA <strong>8.0</strong></span>
+            </div>
+          </article>
+          <article class="objective-card">
+            <p class="card-label">PROFILE</p>
+            <blockquote>
+              I’m an ECE graduate (2026), building full-stack web applications.
+              I work across frontend, backend, and database technologies to
+              create practical products.
+            </blockquote>
+            <span class="objective-card__rule"></span>
+          </article>
+        </div>
+      </section>
+
+      <section class="minimal-section section-shell content-section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="eyebrow">02 — SKILLS</p>
+          <h2 id="skills-title">Skills &amp; <span>tools.</span></h2>
+        </div>
+        <p class="section-note">
+          Frontend: HTML, CSS, JavaScript · Backend: PHP, Java · Databases:
+          MySQL, Firebase · Tools: Git/GitHub, VS Code · Also familiar with C and Python.
+        </p>
+        <a class="back-to-top" href="skills.html#skills">View all skills <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="minimal-section section-shell content-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">03 — PROJECTS</p>
+          <h2 id="projects-title">Selected <span>work.</span></h2>
+        </div>
+        <p class="section-note">4×4 Reversible Multiplier and this Personal Portfolio.</p>
+        <a class="back-to-top" href="projects.html#projects">View projects <span aria-hidden="true">↗</span></a>
+      </section>
+
+      <section class="contact-section section-shell content-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">04 — CONTACT</p>
+          <h2 id="contact-title">Let’s connect<span>.</span></h2>
+          <p class="contact-section__note"><a href="contact.html#contact">Email, GitHub, and LinkedIn</a></p>
+        </div>
+        <a class="back-to-top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+  </body>
+</html>

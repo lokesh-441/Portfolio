@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Projects by Kotaru Venakata Lokesh: a 4×4 Reversible Multiplier and a personal portfolio website."
+    >
+    <meta name="theme-color" content="#0c0c0e">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Projects | Kotaru Venakata Lokesh">
+    <meta
+      property="og:description"
+      content="Projects by Kotaru Venakata Lokesh: a 4×4 Reversible Multiplier and a personal portfolio website."
+    >
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Projects | Kotaru Venakata Lokesh">
+    <meta
+      name="twitter:description"
+      content="Projects by Kotaru Venakata Lokesh: a 4×4 Reversible Multiplier and a personal portfolio website."
+    >
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0c0e'/%3E%3Ctext x='32' y='46' font-size='42' text-anchor='middle' fill='%23c9a96e' font-family='Georgia,serif'%3EK%3C/text%3E%3C/svg%3E"
+    >
+    <title>Projects | Kotaru Venakata Lokesh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <noscript><p class="noscript-message">JavaScript is required for the site navigation and footer. The page content remains available below.</p></noscript>
+    <canvas class="ambient-canvas" aria-hidden="true"></canvas>
+    <div class="background-grid" aria-hidden="true"></div>
+    <div class="glow glow--blue" aria-hidden="true"></div>
+    <div class="glow glow--purple" aria-hidden="true"></div>
+
+    <div id="site-header"></div>
+
+    <main id="main">
+      <section class="projects-page section-shell" id="projects" aria-labelledby="projects-title">
+        <div class="projects-intro">
+          <p class="eyebrow"><span class="status-dot"></span> ENGINEERING WORK</p>
+          <h1 id="projects-title">Projects<span>.</span></h1>
+          <p>Two selected projects, including source code for the reversible multiplier.</p>
+          <div class="projects-intro__line" aria-hidden="true"></div>
+        </div>
+
+        <article class="project-card" aria-labelledby="project-title">
+          <div class="project-card__header">
+            <div class="project-card__heading">
+              <p class="card-label">DIGITAL DESIGN / REVERSIBLE LOGIC</p>
+              <h2 id="project-title">Design and Implementation of a<br class="desktop-break"> 4×4 Reversible Multiplier</h2>
+            </div>
+            <div class="project-emblem" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none">
+                <path d="M32 6 55 19v26L32 58 9 45V19L32 6Z" />
+                <path d="M22 22h20v20H22zM15 27h7M42 27h7M15 37h7M42 37h7M27 15v7M37 15v7M27 42v7M37 42v7" />
+                <path d="M28 28h8v8h-8zM30 32h4M32 30v4" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="project-card__body">
+            <section class="project-detail" aria-labelledby="problem-title">
+              <div class="project-detail__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3 2.8 19h18.4L12 3Z" />
+                  <path d="M12 9v4.5M12 16.5h.01" />
+                </svg>
+              </div>
+              <div>
+                <p class="eyebrow">01 — THE CHALLENGE</p>
+                <h3 id="problem-title">Problem Statement</h3>
+                <p>
+                  Traditional irreversible circuits generate heat and consume
+                  more power due to information loss during computation. There
+                  is a need for low-power arithmetic circuits with reduced
+                  quantum cost and hardware complexity.
+                </p>
+              </div>
+            </section>
+
+            <section class="project-detail project-detail--solution" aria-labelledby="solution-title">
+              <div class="project-detail__icon project-detail__icon--purple" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 5h5v5H5zM14 5h5v5h-5zM9.5 14h5v5h-5z" />
+                  <path d="M10 7.5h4M16.5 10v2.5M12 10v4" />
+                </svg>
+              </div>
+              <div>
+                <p class="eyebrow">02 — THE APPROACH</p>
+                <h3 id="solution-title">Solution</h3>
+                <p>
+                  Design reversible arithmetic modules using HNG, Peres,
+                  Feynman, and other reversible gates through RTL design.
+                  Implement and simulate a 4×4 reversible multiplier in
+                  Verilog HDL using Xilinx Vivado.
+                </p>
+                <div class="gate-list" aria-label="Reversible gates">
+                  <span>HNG</span>
+                  <span>Peres</span>
+                  <span>Feynman</span>
+                  <span>Other reversible gates</span>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="technology-section" aria-labelledby="technology-title">
+            <div class="technology-section__heading">
+              <div>
+                <p class="eyebrow">03 — IMPLEMENTATION</p>
+                <h3 id="technology-title">Technologies Used</h3>
+              </div>
+              <span class="technology-section__rule" aria-hidden="true"></span>
+            </div>
+            <ul class="technology-list">
+              <li class="technology-chip technology-chip--featured">
+                <span class="technology-chip__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" />
+                  </svg>
+                </span>
+                <span>Verilog HDL</span>
+              </li>
+              <li class="technology-chip">
+                <span class="technology-chip__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3 3 8v8l9 5 9-5V8l-9-5Z" />
+                    <path d="m3.5 8.5 8.5 5 8.5-5M12 13.5V21M8 5.3l9 5.1" />
+                  </svg>
+                </span>
+                <span>RTL Design</span>
+              </li>
+              <li class="technology-chip technology-chip--featured technology-chip--purple">
+                <span class="technology-chip__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 5h16v14H4zM7 9h3M7 12h3M7 15h3M14 9h3v6h-3z" />
+                    <path d="M5 3v2M19 3v2M5 19v2M19 19v2" />
+                  </svg>
+                </span>
+                <span>Xilinx Vivado</span>
+              </li>
+              <li class="technology-chip">
+                <span class="technology-chip__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M12 3 4 7.5v9L12 21l8-4.5v-9L12 3Z" />
+                    <path d="m4.5 7.8 7.5 4.3 7.5-4.3M12 12.1V21M8 5.2l7.5 4.4" />
+                  </svg>
+                </span>
+                <span>FPGA Technology</span>
+              </li>
+            </ul>
+          </section>
+
+          <div class="project-links">
+            <a class="project-link" href="https://github.com/lokesh-441/Fundamental-Digital-Module-Realization-using-RTL-Design-for-Quantum-Mechanics.git" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.800 5.400 3.100 5.400 3.100a4.200 4.200 0 0 0-.1 3.200A4.600 4.600 0 0 0 4 9.500c0 4.600 2.700 5.700 5.500 6-.6.600-.6 1.200-.5 2V21" /></svg>
+              <span>View repository on GitHub</span>
+              <span class="project-link__arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="project-card__footer">
+            <span class="project-card__footer-mark" aria-hidden="true">KVL <span>·</span> RTL</span>
+            <span>REVERSIBLE ARITHMETIC DESIGN</span>
+          </div>
+        </article>
+
+        <article class="project-card" aria-labelledby="project-title-2">
+          <div class="project-card__header">
+            <div class="project-card__heading">
+              <p class="card-label">WEB DEVELOPMENT / PERSONAL BRAND</p>
+              <h2 id="project-title-2">Personal Portfolio<br class="desktop-break"> Website</h2>
+            </div>
+            <div class="project-emblem" aria-hidden="true">
+              <svg viewBox="0 0 64 64" fill="none">
+                <rect x="8" y="12" width="48" height="36" rx="4" />
+                <path d="M8 22h48M20 56h24M32 48v8" />
+                <path d="M15 17h.01M21 17h.01M27 17h.01M18 30h18M18 37h28" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="project-card__body">
+            <section class="project-detail" aria-labelledby="problem-title-2">
+              <div class="project-detail__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M12 3 2.8 19h18.4L12 3Z" />
+                  <path d="M12 9v4.5M12 16.5h.01" />
+                </svg>
+              </div>
+              <div>
+                <p class="eyebrow">01 — THE PURPOSE</p>
+                <h3 id="problem-title-2">Overview</h3>
+                <p>A responsive personal portfolio presenting my education, certifications, skills, projects, and contact details in one clean, easy-to-navigate website.</p>
+              </div>
+            </section>
+
+            <section class="project-detail project-detail--solution" aria-labelledby="solution-title-2">
+              <div class="project-detail__icon project-detail__icon--purple" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M5 5h5v5H5zM14 5h5v5h-5zM9.5 14h5v5h-5z" />
+                  <path d="M10 7.5h4M16.5 10v2.5M12 10v4" />
+                </svg>
+              </div>
+              <div>
+                <p class="eyebrow">02 — THE BUILD</p>
+                <h3 id="solution-title-2">Highlights</h3>
+                <p>Built with semantic HTML, modular CSS, and lightweight JavaScript. Includes a mobile-friendly navigation menu, accessible markup, and a refined dark theme.</p>
+                <div class="gate-list" aria-label="Pages">
+                  <span>Home</span>
+                  <span>About</span>
+                  <span>Skills</span>
+                  <span>Projects</span>
+                  <span>Contact</span>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="technology-section" aria-labelledby="technology-title-2">
+            <div class="technology-section__heading">
+              <div>
+                <p class="eyebrow">03 — IMPLEMENTATION</p>
+                <h3 id="technology-title-2">Technologies Used</h3>
+              </div>
+              <span class="technology-section__rule" aria-hidden="true"></span>
+            </div>
+            <ul class="technology-list">
+              <li class="technology-chip technology-chip--featured">
+                <span class="technology-chip__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" />
+                  </svg>
+                </span>
+                <span>HTML5</span>
+              </li>
+              <li class="technology-chip">
+                <span class="technology-chip__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M4 5h16v14H4zM7 9h10M7 13h6" />
+                  </svg>
+                </span>
+                <span>CSS3</span>
+              </li>
+              <li class="technology-chip technology-chip--featured">
+                <span class="technology-chip__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M5 4h14v16H5zM10 10v5a2 2 0 0 1-3 1.500M14 16.500c.5.800 1.200 1 2 1 1.200 0 2-.600 2-1.500s-.800-1.300-2-1.600-2-.700-2-1.600 .800-1.500 2-1.500c.800 0 1.400.300 1.800 1" />
+                  </svg>
+                </span>
+                <span>JavaScript</span>
+              </li>
+              <li class="technology-chip">
+                <span class="technology-chip__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none">
+                    <path d="M3 5h18v11H3zM8 20h8M12 16v4" />
+                  </svg>
+                </span>
+                <span>Responsive Design</span>
+              </li>
+            </ul>
+          </section>
+
+          <div class="project-card__footer">
+            <span class="project-card__footer-mark" aria-hidden="true">KVL <span>·</span> WEB</span>
+            <span>PORTFOLIO WEBSITE</span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div id="site-footer"></div>
+  </body>
+</html>
