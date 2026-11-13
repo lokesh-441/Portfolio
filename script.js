@@ -308,12 +308,14 @@ if (finePointer.matches && !reducedMotion.matches) {
     let heroBounds;
 
     hero.addEventListener("pointerenter", () => {
-      heroBounds = hero.getBoundingClientRect();
+      window.requestAnimationFrame(() => {
+        heroBounds = hero.getBoundingClientRect();
+      });
     });
     hero.addEventListener(
       "pointermove",
       (event) => {
-        if (!heroBounds) heroBounds = hero.getBoundingClientRect();
+        if (!heroBounds) return;
         const offsetX = (event.clientX - heroBounds.left) / heroBounds.width - 0.5;
         const offsetY = (event.clientY - heroBounds.top) / heroBounds.height - 0.5;
         heroVisual.style.setProperty("--parallax-x", `${(offsetX * 12).toFixed(2)}px`);
@@ -332,12 +334,14 @@ if (finePointer.matches && !reducedMotion.matches) {
     let buttonBounds;
 
     button.addEventListener("pointerenter", () => {
-      buttonBounds = button.getBoundingClientRect();
+      window.requestAnimationFrame(() => {
+        buttonBounds = button.getBoundingClientRect();
+      });
     });
     button.addEventListener(
       "pointermove",
       (event) => {
-        if (!buttonBounds) buttonBounds = button.getBoundingClientRect();
+        if (!buttonBounds) return;
         const offsetX = event.clientX - (buttonBounds.left + buttonBounds.width / 2);
         const offsetY = event.clientY - (buttonBounds.top + buttonBounds.height / 2);
         button.style.setProperty("--magnet-x", `${(offsetX * 0.08).toFixed(2)}px`);
@@ -361,13 +365,15 @@ if (finePointer.matches && !reducedMotion.matches) {
       card.classList.add("spotlight-card", "tilt-card");
 
       card.addEventListener("pointerenter", () => {
-        cardBounds = card.getBoundingClientRect();
         card.classList.add("is-spotlit");
+        window.requestAnimationFrame(() => {
+          cardBounds = card.getBoundingClientRect();
+        });
       });
       card.addEventListener(
         "pointermove",
         (event) => {
-          if (!cardBounds) cardBounds = card.getBoundingClientRect();
+          if (!cardBounds) return;
           const x = event.clientX - cardBounds.left;
           const y = event.clientY - cardBounds.top;
           const rotateX = (0.5 - y / cardBounds.height) * 8;
